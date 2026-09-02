@@ -1,69 +1,577 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasterDecor52</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MasterDecor52 — декоративные покрытия</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="wrapper">
 
- <div class="page">
-  <div class="page_block">
- 
+  <main>
+    <section class="hero">
+      <div class="container">
 
-    <picture>
-      <source srcset="img/Logo@1x.png" media="(max-width: 768px)">
-    
-      <img class="logo" src="img/Logo 1.png" alt="">
-  </picture>
-<div class="page_tittle">
-  <h1 class="title">Сайт на реконструкции, но команда <br>
-<span class="name">MasterDecor52</span> по-прежнему с вами!</h1>
+        <header class="header">
+          <a href="#" class="logo">
+  <img src="images/logo.svg" alt="MasterDecor52">
+</a>
+
+      <nav class="nav">
+  <a href="#" class="nav__link nav__link--active">ГЛАВНАЯ</a>
+  <a href="#services" class="nav__link">УСЛУГИ</a>
+  <a href="#portfolio" class="nav__link">ПОРТФОЛИО</a>
+</nav>
+
+<button class="menu-toggle" type="button" aria-label="Открыть меню">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+        </header>
+
+        <div class="hero__content">
+         <div class="hero__content">
+  <p class="hero__label">
+  MASTERDECOR52 / НАНЕСЕНИЕ ДЕКОРАТИВНЫХ ПОКРЫТИЙ
+</p>
+
+  <h1 class="hero__title">
+  <span>Профессиональное</span>
+  <span>нанесение декоративных</span>
+  <span>покрытий</span>
+</h1>
+
+  <p class="hero__text">
+  Нанесение всех видов декоративных покрытий для интерьеров.
+</p>
+
+  <div class="hero__buttons">
+    <a href="#portfolio" class="hero__button">
+      Посмотреть работы
+    </a>
+
+    <a href="#contacts" class="hero__button hero__button--outline">
+      Обсудить проект
+    </a>
+  </div>
 </div>
 
- <div class="button_block">
- <p class="button_block_text">чтобы посмотреть наши работы и задать вопрос мастеру </p>
- <picture>
-  <source srcset="img/vk_icon1x.png" media="(max-width: 768px)">
-<img class="vk_icon" src="img/ikon vk.png" alt="">
-</picture>
+      </div>
+    </section>
 
- 
-  <a href="https://vk.com/gim172433816" class="btn">нажми</a>
- </div>   
+    <section class="advantages">
+  <div class="advantages__item">
+   <img class="advantages__icon" src="images/icon 01.svg" alt="Доступные цены">
 
-  <div class="contacts">
-   <div class=phone>
-    <picture>
-      <source srcset="img/phone@1x.png" media="(max-width: 768px)">
-    
-      <img src="img/phone.png" alt="">
-  </picture>
-    
-     <a class="tel" href="tel:+7952788852">+7 (952) 7-888-52</a>
-   </div>
+    <h2 class="advantages__title">Доступные цены</h2>
 
-  <div class="mail">
-    <picture>
-      <source srcset="img/mail@1x.png" media="(max-width: 768px)">
-    
-      <img src="img/mail.png" alt="">
-  </picture>
-    <a class="mail_adress" href="https://mail.yandex.ru/?uid=374687064#inbox"> masterdecor52@yandex.ru</a>
+   <p class="advantages__text">
+  Честная стоимость работ<br>
+  с учетом материалов
+</p>
   </div>
 
-</div>         
- </div>
+  <div class="advantages__item">
+    <img class="advantages__icon" src="images/icon 02.svg" alt="Высокое качество">
+
+
+    <h2 class="advantages__title">Высокое качество</h2>
+
+  <p class="advantages__text">
+  Работаем аккуратно и используем<br>
+  проверенные материалы
+</p>
+  </div>
+
+  <div class="advantages__item">
+   <img class="advantages__icon" src="images/icon 03.svg" alt="Индивидуальный подход">
+    <h2 class="advantages__title">Индивидуальный подход</h2>
+
+    <p class="advantages__text">
+  Подбираем технику и фактуру<br>
+  под ваш интерьер
+</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+
+    <p class="services__label">НАШИ УСЛУГИ</p>
+
+    <h2 class="services__heading">
+      Покрытия, которые<br>
+      преображают пространство
+    </h2>
+
+    <div class="services__grid">
+
+      <!-- Декоративные краски -->
+      <article class="service-card">
+
+        <div class="service-card__image"></div>
+
+        <div class="service-card__content">
+          <h3>ДЕКОРАТИВНЫЕ<br>КРАСКИ</h3>
+
+          <p class="service-card__description">
+            ЭСТЕТИЧНЫЕ МАТОВЫЕ И ПЕРЛАМУТРОВЫЕ<br>
+            ПОВЕРХНОСТИ С ГЛУБИНОЙ ЦВЕТА<br>
+            И МЯГКИМИ ПЕРЕЛИВАМИ.
+          </p>
+
+          <div class="service-card__line"></div>
+
+          <p class="service-card__price">ОТ 2000/М</p>
+
+          <p class="service-card__note">
+            ЦЕНЫ УКАЗАНЫ ЗА НАНЕСЕНИЕ С УЧЕТОМ<br>
+            СТОИМОСТИ МАТЕРИАЛОВ
+          </p>
+        </div>
+
+      </article>
+
+
+      <!-- Венецианская штукатурка -->
+      <article class="service-card">
+
+        <div class="service-card__image"></div>
+
+        <div class="service-card__content">
+          <h3>ВЕНЕЦИАНСКАЯ<br>ШТУКАТУРКА</h3>
+
+          <p class="service-card__description">
+            БЛАГОРОДНЫЙ БЛЕСК И ЭФФЕКТ<br>
+            НАТУРАЛЬНОГО<br>
+            КАМНЯ. ГЛУБИНА, СВЕТ И ВЫРАЗИТЕЛЬНАЯ<br>
+            ФАКТУРА В КАЖДОМ СЛОЕ.
+          </p>
+
+          <div class="service-card__line"></div>
+
+          <p class="service-card__price">ОТ 3000/М</p>
+
+          <p class="service-card__note">
+            ЦЕНЫ УКАЗАНЫ ЗА НАНЕСЕНИЕ С УЧЕТОМ<br>
+            СТОИМОСТИ МАТЕРИАЛОВ
+          </p>
+        </div>
+
+      </article>
+
+
+      <!-- Фактурная штукатурка -->
+      <article class="service-card">
+
+        <div class="service-card__image"></div>
+
+        <div class="service-card__content">
+          <h3>ФАКТУРНАЯ<br>ШТУКАТУРКА</h3>
+
+          <p class="service-card__description">
+            ЭСТЕТИЧНЫЕ МАТОВЫЕ И ПЕРЛАМУТРОВЫЕ<br>
+            ПОВЕРХНОСТИ С ГЛУБИНОЙ ЦВЕТА<br>
+            И МЯГКИМИ ПЕРЕЛИВАМИ.
+          </p>
+
+          <div class="service-card__line"></div>
+
+          <p class="service-card__price">ОТ 2500/М</p>
+
+          <p class="service-card__note">
+            ЦЕНЫ УКАЗАНЫ ЗА НАНЕСЕНИЕ С УЧЕТОМ<br>
+            СТОИМОСТИ МАТЕРИАЛОВ
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio" data-project="01">
+
+  <div class="container">
+
+    <p class="portfolio__label">ПОРТФОЛИО</p>
+
+    <h2 class="portfolio__heading">Наши работы</h2>
+
+    <div class="portfolio__slider">
+
+      <button class="portfolio__arrow portfolio__arrow--left" type="button">
+        &#9664;
+      </button>
+
+      <div class="portfolio__gallery">
+
+        <div class="portfolio__image portfolio__image--main"></div>
+
+        <div class="portfolio__side">
+          <div class="portfolio__image portfolio__image--small"></div>
+          <div class="portfolio__image portfolio__image--small"></div>
+        </div>
+
+      </div>
+
+      <button class="portfolio__arrow portfolio__arrow--right" type="button">
+        &#9654;
+      </button>
+
+      <div class="portfolio__dots">
+        <button class="portfolio__dot portfolio__dot--active" type="button"></button>
+        <button class="portfolio__dot" type="button"></button>
+        <button class="portfolio__dot" type="button"></button>
+      </div>
+
+    </div>
+
+    <div class="portfolio__info">
+
+
+  <h3 class="portfolio__title">
+    ФАКТУРНАЯ ШТУКАТУРКА
+  </h3>
+
+  <p class="portfolio__description">
+    ВЫРАЗИТЕЛЬНАЯ ФАКТУРА И ЕСТЕСТВЕННЫЙ РЕЛЬЕФ, КОТОРЫЕ<br>
+    ДОБАВЛЯЮТ ИНТЕРЬЕРУ ГЛУБИНУ И ХАРАКТЕР.
+  </p>
+
+  <div class="portfolio__features">
+
+    <div class="portfolio__feature">
+      <h4>НЕ ТРЕБУЕТ ИДЕАЛЬНОЙ СТЕНЫ</h4>
+      <p>
+        СКРЫВАЕТ НЕБОЛЬШИЕ НЕРОВНОСТИ И ОСОБЕННОСТИ<br>
+        ПОВЕРХНОСТИ.
+      </p>
+    </div>
+
+    <div class="portfolio__feature">
+      <h4>ДОЛГОВЕЧНОЕ ПОКРЫТИЕ</h4>
+      <p>
+        СОХРАНЯЕТ ФАКТУРУ И ВНЕШНИЙ ВИД НА<br>
+        ДОЛГИЕ ГОДЫ.
+      </p>
+    </div>
+
+    <div class="portfolio__feature">
+      <h4>УНИКАЛЬНАЯ ФАКТУРА</h4>
+      <p>
+        РИСУНОК СОЗДАЁТСЯ ВРУЧНУЮ И НЕ<br>
+        ПОВТОРЯЕТСЯ ПОЛНОСТЬЮ.
+      </p>
+    </div>
+
+  </div>
+
 </div>
+</section>
+
+<section class="portfolio" data-project="02">
+
+  <div class="container">
+
+    <div class="portfolio__slider">
+
+      <button class="portfolio__arrow portfolio__arrow--left" type="button">
+        &#9664;
+      </button>
+
+      <div class="portfolio__gallery">
+        <div class="portfolio__image portfolio__image--main portfolio__image--venetian-main"></div>
+
+        <div class="portfolio__side">
+          <div class="portfolio__image portfolio__image--small portfolio__image--venetian-top"></div>
+          <div class="portfolio__image portfolio__image--small portfolio__image--venetian-bottom"></div>
+        </div>
+      </div>
+
+      <button class="portfolio__arrow portfolio__arrow--right" type="button">
+        &#9654;
+      </button>
+
+      <div class="portfolio__dots">
+        <button class="portfolio__dot portfolio__dot--active" type="button"></button>
+        <button class="portfolio__dot" type="button"></button>
+        <button class="portfolio__dot" type="button"></button>
+      </div>
+    </div>
+
+    <div class="portfolio__info">
+      <h3 class="portfolio__title">ВЕНЕЦИАНСКАЯ ШТУКАТУРКА</h3>
+
+      <p class="portfolio__description">
+        ЭЛЕГАНТНОЕ ПОКРЫТИЕ С ГЛУБОКИМИ ПЕРЕЛИВАМИ И ЭФФЕКТОМ НАТУРАЛЬНОГО КАМНЯ.<br>
+        СОЗДАЁТ БЛАГОРОДНУЮ АТМОСФЕРУ И СТАНОВИТСЯ ВЫРАЗИТЕЛЬНЫМ АКЦЕНТОМ ИНТЕРЬЕРА.
+      </p>
+
+      <div class="portfolio__features">
+
+        <div class="portfolio__feature">
+          <h4>ЭФФЕКТ НАТУРАЛЬНОГО МРАМОРА</h4>
+          <p>
+            ГЛУБОКИЕ ПЕРЕЛИВЫ И БЛАГОРОДНЫЙ БЛЕСК ПОВЕРХНОСТИ.
+          </p>
+        </div>
+
+        <div class="portfolio__feature">
+          <h4>ВЫСОКАЯ ВАРИАТИВНОСТЬ</h4>
+          <p>
+            МОЖНО ПОДОБРАТЬ ОТТЕНОК И ХАРАКТЕР ФАКТУРЫ ПОД ИНТЕРЬЕР.
+          </p>
+        </div>
+
+        <div class="portfolio__feature">
+          <h4>ПРЕМИАЛЬНЫЙ ВНЕШНИЙ ВИД</h4>
+          <p>
+            СОЗДАЁТ ВЫРАЗИТЕЛЬНЫЙ АКЦЕНТ И ДОБАВЛЯЕТ ИНТЕРЬЕРУ ГЛУБИНУ.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
   </div>
-  </body>
+</section>
+
+<section class="portfolio" data-project="03">
+  <div class="container">
+
+    <div class="portfolio__slider">
+
+      <button class="portfolio__arrow portfolio__arrow--left" type="button">
+        &#9664;
+      </button>
+
+      <div class="portfolio__gallery">
+
+        <div class="portfolio__image portfolio__image--main portfolio__image--paint-main"></div>
+
+        <div class="portfolio__side">
+          <div class="portfolio__image portfolio__image--small portfolio__image--paint-top"></div>
+          <div class="portfolio__image portfolio__image--small portfolio__image--paint-bottom"></div>
+        </div>
+
+      </div>
+
+      <button class="portfolio__arrow portfolio__arrow--right" type="button">
+        &#9654;
+      </button>
+
+      <div class="portfolio__dots">
+        <button class="portfolio__dot portfolio__dot--active" type="button"></button>
+        <button class="portfolio__dot" type="button"></button>
+        <button class="portfolio__dot" type="button"></button>
+      </div>
+
+    </div>
+
+
+    <div class="portfolio__info">
+
+      <h3 class="portfolio__title">
+        ДЕКОРАТИВНАЯ КРАСКА
+      </h3>
+
+      <p class="portfolio__description">
+        ЭЛЕГАНТНОЕ ПОКРЫТИЕ С МЯГКИМИ ПЕРЕЛИВАМИ И ГЛУБИНОЙ ЦВЕТА,<br>
+        КОТОРОЕ ПОЗВОЛЯЕТ СОЗДАТЬ ВЫРАЗИТЕЛЬНУЮ ПОВЕРХНОСТЬ И<br>
+        ПОДЧЕРКНУТЬ ХАРАКТЕР ИНТЕРЬЕРА
+      </p>
+
+      <div class="portfolio__features">
+
+        <div class="portfolio__feature">
+          <h4>ШИРОКИЙ ВЫБОР ОТТЕНКОВ</h4>
+          <p>
+            МОЖНО ПОДОБРАТЬ ЦВЕТ И ОТТЕНОК ПОКРЫТИЯ ПОД<br>
+            ЛЮБОЙ СТИЛЬ ИНТЕРЬЕРА
+          </p>
+        </div>
+
+        <div class="portfolio__feature">
+          <h4>РАЗНООБРАЗИЕ ЭФФЕКТОВ</h4>
+          <p>
+            РАЗЛИЧНЫЕ ТЕХНИКИ НАНЕСЕНИЯ ПОЗВОЛЯЮТ<br>
+            СОЗДАВАТЬ ОТ СПОКОЙНЫХ МАТОВЫХ ПОВЕРХНОСТЕЙ<br>
+            ДО ВЫРАЗИТЕЛЬНЫХ ДЕКОРАТИВНЫХ ЭФФЕКТОВ
+          </p>
+        </div>
+
+        <div class="portfolio__feature">
+          <h4>ЛЕГКО ОБНОВИТЬ ИНТЕРЬЕР</h4>
+          <p>
+            ПОЗВОЛЯЕТ СОЗДАТЬ ЭФФЕКТНУЮ АКЦЕНТНУЮ<br>
+            ПОВЕРХНОСТЬ БЕЗ ИСПОЛЬЗОВАНИЯ СЛОЖНЫХ<br>
+            ОТДЕЛОЧНЫХ МАТЕРИАЛОВ
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+
+    <p class="process__label">КАК МЫ РАБОТАЕМ</p>
+
+    <h2 class="process__heading">
+      От идеи до готового результата
+    </h2>
+
+    <div class="process__steps">
+
+      <div class="process__step">
+        <span class="process__number">01</span>
+        <h3>ЗНАКОМСТВО</h3>
+        <p>
+          Обсуждаем ваши пожелания, стиль интерьера
+          и задачи проекта.
+        </p>
+      </div>
+
+      <div class="process__step">
+        <span class="process__number">02</span>
+        <h3>ВЫЕЗД МАСТЕРА</h3>
+        <p>
+          Приезжаем на объект для замера,
+          оценки объёма работ и знакомства
+          с пространством.
+        </p>
+      </div>
+
+      <div class="process__step">
+        <span class="process__number">03</span>
+        <h3>ОБРАЗЕЦ И ПОДБОР</h3>
+        <p>
+          Подбираем оттенок и фактуру,
+          создаём образец и согласовываем
+          будущий результат.
+        </p>
+      </div>
+
+      <div class="process__step">
+        <span class="process__number">04</span>
+        <h3>ДОГОВОР И ПРЕДОПЛАТА</h3>
+        <p>
+          Согласовываем стоимость и сроки,
+          подписываем договор.
+          Предоплата — 50%.
+        </p>
+      </div>
+
+      <div class="process__step">
+        <span class="process__number">05</span>
+        <h3>ВЫПОЛНЕНИЕ РАБОТЫ</h3>
+        <p>
+          Наносим выбранное покрытие
+          в соответствии с согласованным
+          образцом и эскизом.
+        </p>
+      </div>
+
+      <div class="process__step">
+        <span class="process__number">06</span>
+        <h3>СДАЧА ПРОЕКТА</h3>
+        <p>
+          Сдаём готовую работу.
+          После приёмки производится
+          окончательный расчёт.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <div class="container contacts__inner">
+
+    <div class="contacts__left">
+
+      <p class="contacts__label">КОНТАКТЫ</p>
+
+      <h2 class="contacts__heading">
+        ДАВАЙТЕ ОБСУДИМ<br>
+        ВАШ ПРОЕКТ
+      </h2>
+
+      <div class="contacts__line"></div>
+
+      <a class="contacts__phone" href="tel:+7952788852">
+        +7(952)7-888-52
+      </a>
+
+      <p class="contacts__text">
+        Расскажите нам о вашей идее - поможем подобрать<br>
+        покрытие, фактуру и оттенок для вашего интерьера.
+      </p>
+
+    </div>
+
+
+    <div class="contacts__socials">
+
+      <a href="mailto:masterdecor52@yandex.ru" class="contacts__social">
+        <div class="contacts__icon contacts__icon--mail">
+          <svg viewBox="0 0 64 48" aria-hidden="true">
+            <rect x="2" y="2" width="60" height="44" rx="4"></rect>
+            <path d="M4 6L32 29L60 6"></path>
+          </svg>
+        </div>
+        <span>Почта</span>
+      </a>
+
+      <div class="contacts__divider"></div>
+
+      <a href="https://vk.ru/masdec52" class="contacts__social">
+        <div class="contacts__icon contacts__icon--vk">
+          <svg viewBox="0 0 64 48" aria-hidden="true">
+            <path d="M7 9h10c1 15 7 22 12 24V9h10v14c5-1 10-7 13-14h10c-3 10-8 17-14 22 6 4 11 10 16 17H52c-4-6-8-10-13-13v13h-6C17 48 8 36 7 9Z"></path>
+          </svg>
+        </div>
+        <span>ВКонтакте</span>
+      </a>
+
+      <div class="contacts__divider"></div>
+
+      <a href="#" class="contacts__social">
+        <div class="contacts__icon contacts__icon--rutube">
+          <svg viewBox="0 0 64 48" aria-hidden="true">
+            <rect x="3" y="3" width="58" height="42" rx="11"></rect>
+            <path d="M27 15L43 24L27 33Z"></path>
+          </svg>
+        </div>
+        <span>RuTube</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Декоративные покрытия для интерьеров</p>
+    <p>© 2026 MasterDecor52</p>
+  </div>
+</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
