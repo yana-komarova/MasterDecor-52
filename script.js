@@ -42,7 +42,24 @@ if (menuToggle && nav) {
 // ===============================
 
 const portfolioSliders = document.querySelectorAll(".portfolio__slider");
+const carouselImages = [];
 
+for (let project = 1; project <= 3; project++) {
+  const projectNumber = String(project).padStart(2, "0");
+
+  for (let slide = 1; slide <= 3; slide++) {
+    carouselImages.push(
+      `images/portfolio-${projectNumber}-slide-${slide}-main.jpg`,
+      `images/portfolio-${projectNumber}-slide-${slide}-top.jpg`,
+      `images/portfolio-${projectNumber}-slide-${slide}-bottom.jpg`
+    );
+  }
+}
+
+carouselImages.forEach((src) => {
+  const image = new Image();
+  image.src = src;
+});
 portfolioSliders.forEach((slider) => {
   const portfolioSection = slider.closest(".portfolio");
 
