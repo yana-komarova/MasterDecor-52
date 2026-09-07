@@ -207,3 +207,83 @@ if ("scrollRestoration" in history) {
 window.addEventListener("load", () => {
   window.scrollTo(0, 0);
 });
+
+// ===============================
+// LIGHTBOX ПОРТФОЛИО
+// ===============================
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.querySelector(".lightbox__image");
+const lightboxClose = document.querySelector(".lightbox__close");
+
+document.querySelectorAll(".portfolio__image").forEach((image) => {
+  image.addEventListener("click", () => {
+    const backgroundImage = getComputedStyle(image).backgroundImage;
+
+    if (!backgroundImage || backgroundImage === "none") {
+      return;
+    }
+
+    const imageUrl = backgroundImage
+      .replace(/^url\(["']?/, "")
+      .replace(/["']?\)$/, "");
+
+    lightboxImage.src = imageUrl;
+    lightbox.classList.add("lightbox--open");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("lightbox--open");
+  lightboxImage.src = "";
+  document.body.style.overflow = "";
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+});
+
+// ===============================
+// АНИМАЦИЯ ПРИ СКРОЛЛЕ
+// ===============================
+
+const revealElements = document.querySelectorAll(
+  ".services__label, .services__heading, .service-card, " +
+  ".portfolio__label, .portfolio__heading, .portfolio__slider, .portfolio__info, " +
+  ".process__label, .process__heading, .process__step, " +
+  ".contacts__left, .contacts__socials"
+);
+
+revealElements.forEach((element) => {
+  element.classList.add("reveal");
+});
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal--visible");
+      } else {
+        entry.target.classList.remove("reveal--visible");
+      }
+    });
+  },
+  {
+    threshold: 0.12
+  }
+);
+
+revealElements.forEach((element) => {
+  revealObserver.observe(element);
+});
